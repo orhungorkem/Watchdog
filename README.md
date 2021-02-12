@@ -15,7 +15,8 @@ process (or all processes of the project, if necessary). To simulate real-life s
 
 First, compile executor.cpp and run in background with number of processes and path of instructions passed as arguments.
 * g++ -o executor executor.cpp
-*  ./executor <num_of_processes> <instructions_path> &  \
+*  ./executor <num_of_processes> <instructions_path> &  
+<a/>
 Then, compile watchdog.c and process.c and run watchdog. (Processes are executed with `execlp` system call.)
 * gcc process.c -o process
 * gcc watchdog.c -o watchdog
