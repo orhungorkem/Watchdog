@@ -44,7 +44,7 @@ SIGXCPU P3
 SIGSEGV P1
 ```
 
-For a scenario, watchdog and child processes generate 2 ouput files. These files include the activities of corresponding processes.\
+For a scenario, watchdog and child processes generate 2 output files. These files include the activities of corresponding processes.\
 Watchdog output:
 ```
 P1 is started and it has a pid of 4296
