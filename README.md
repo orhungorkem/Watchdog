@@ -10,3 +10,15 @@ process (or all processes of the project, if necessary). To simulate real-life s
  * If head process of childs(P0) dies, terminating all childs and restarting again.
 
  When executor has no remaining signal to send, it terminates all processes. 
+
+ ## Compilation and Execution
+
+First, compile executor.cpp and run in background with number of processes and path of instructions passed as arguments.
+* g++ -o executor executor.cpp
+*  ./executor <num_of_processes> <instructions_path> &
+Then, compile watchdog.c and process.c and run watchdog. (Processes are executed with `execlp` system call.)
+* gcc process.c -o process
+* gcc watchdog.c -o watchdog
+* ./watchdog <num_of_processes> <process_output_path> <watchdog_output_path>
+
+
